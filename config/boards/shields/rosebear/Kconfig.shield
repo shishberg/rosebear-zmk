@@ -1,0 +1,5 @@
+config SHIELD_ROSEBEAR_LEFT
+    def_bool $(shields_list_contains,rosebear_left)
+
+config SHIELD_ROSEBEAR_RIGHT
+    def_bool $(shields_list_contains,rosebear_right)
