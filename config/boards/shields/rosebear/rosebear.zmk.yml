@@ -1,0 +1,11 @@
+file_format: "1"
+id: rosebear
+name: Rosebear
+type: shield
+url: https://github.com/shishberg/rosebear/
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - rosebear_left
+  - rosebear_right
