@@ -11,7 +11,14 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping_term_ms = <200>;
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
+};
+
+&lt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;
 };
 
 / {
@@ -29,7 +36,7 @@
 
         NUM_layer {
             bindings = <
-    &kp HOME &kp W      &kp F        &kp P        &none       &kp ASTR  &kp N7    &kp N8    &kp N9    &kp PRCNT
+    &kp HOME &kp PG_DN  &kp PG_UP    &kp END      &none       &kp ASTR  &kp N7    &kp N8    &kp N9    &kp PRCNT
     &kp LEFT &kp DOWN   &kp UP       &kp RIGHT    &none       &kp PLUS  &kp N4    &kp N5    &kp N6    &kp MINUS
     &none    &kp K_MUTE &kp K_VOL_DN &kp K_VOL_UP &none       &kp EQUAL &kp N1    &kp N2    &kp N3    &kp DLLR
                         &trans       &trans    &to MAIN       &to MAIN  &trans    &kp N0
