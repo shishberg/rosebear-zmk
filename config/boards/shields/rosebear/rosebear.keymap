@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define MAIN  0
-#define NOMOD 1
+#define QWERTY 1
 #define NUM   2
 #define SYM   3
 #define HOLD  4
@@ -35,12 +35,12 @@
             >;
         };
 
-        NOMOD_layer {
+        QWERTY_layer {
             bindings = <
-    &kp Q &kp W &kp F &kp P &kp B     &kp J &kp L &kp U &kp Y &kp SQT
-    &kp A &kp R &kp S &kp T &kp G     &kp M &kp N &kp E &kp I &kp O
-    &kp Z &kp X &kp C &kp D &kp V     &kp K &kp H &kp COMMA &kp DOT &kp FSLH
-    &kp TAB &kp SPACE &lt HOLD ESC     &lt HOLD DEL &kp RET &kp BSPC
+    &kp Q       &kp W      &kp E       &kp R      &kp T       &kp Y &kp U      &kp I       &kp O      &kp P
+    &mt LCTRL A &mt LALT S &mt LSHFT D &mt LGUI F &kp G       &kp H &mt RGUI J &mt RSHFT K &mt RALT L &mt RCTRL SQT
+    &kp Z       &kp X      &kp C       &kp V      &kp B       &kp N &kp M      &kp COMMA   &kp DOT    &kp FSLH
+              &trans &trans &trans     &trans &trans &trans
             >;
         };
 
@@ -65,7 +65,7 @@
         HOLD_layer {
             bindings = <
     &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR &kp LS(LA(LC(J))) &kp LS(LA(LC(L))) &kp LS(LA(LC(U)))     &kp LS(LA(LC(Y)))   &kp LS(LA(LC(SQT)))
-    &none &none &none &tog NOMOD &none                                  &kp LS(LA(LC(M))) &kp LS(LA(LC(N))) &kp LS(LA(LC(E)))     &kp LS(LA(LC(I)))   &kp LS(LA(LC(O)))
+    &none &none &none &tog QWERTY &none                                  &kp LS(LA(LC(M))) &kp LS(LA(LC(N))) &kp LS(LA(LC(E)))     &kp LS(LA(LC(I)))   &kp LS(LA(LC(O)))
     &none &none &none &none &none                                  &kp LS(LA(LC(K))) &kp LS(LA(LC(H))) &kp LS(LA(LC(COMMA))) &kp LS(LA(LC(DOT))) &kp LS(LA(LC(FSLH)))
             &to NUM &to SYM &none                                  &none &to SYM &to NUM
             >;
