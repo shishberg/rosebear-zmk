@@ -1,6 +1,6 @@
 # Rosebear ZMK
 
-[ZMK](https://zmk.dev/) config the [Rosebear split keyboard](https://github.com/shishberg/rosebear).
+[ZMK](https://zmk.dev/) config for the [Rosebear split keyboard](https://github.com/shishberg/rosebear).
 
 ## Default keymap
 
