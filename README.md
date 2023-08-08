@@ -7,7 +7,7 @@
 The default keymap is Colemak-DH with homerow mods and layer-tap thumb keys.
 
 Layer 1 has a numpad and navigation keys; layer 2 has function keys; symbols are kind of jammed in wherever.
-Layer 3 (not pictured here) is the "hold" layer, which turns the other layer keys from layer-tap to toggle
+Layer 3 (not shown here) is the "hold" layer, which turns the other layer keys from layer-tap to toggle
 (so you can lock a layer without holding the key), and also has some miscellaneous stuff like Bluetooth
 profile keys.
 
