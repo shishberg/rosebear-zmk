@@ -1,6 +1,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 #define MAIN 0
 #define NUM  1
@@ -54,9 +55,9 @@
 
         HOLD_layer {
             bindings = <
-    &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR &kp LS(LA(LC(J))) &kp LS(LA(LC(L))) &kp LS(LA(LC(U)))     &kp LS(LA(LC(Y)))   &kp LS(LA(LC(SQT)))
-    &none &none &none &none &none                                  &kp LS(LA(LC(M))) &kp LS(LA(LC(N))) &kp LS(LA(LC(E)))     &kp LS(LA(LC(I)))   &kp LS(LA(LC(O)))
-    &none &none &none &none &none                                  &kp LS(LA(LC(K))) &kp LS(LA(LC(H))) &kp LS(LA(LC(COMMA))) &kp LS(LA(LC(DOT))) &kp LS(LA(LC(FSLH)))
+    &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR &kp LS(LA(LC(J))) &kp LS(LA(LC(L))) &kp LS(LA(LC(U))) &kp LS(LA(LC(Y)))   &kp LS(LA(LC(SQT)))
+    &out OUT_TOG &none &none &none &none                                  &kp LS(LA(LC(M))) &kp LS(LA(LC(N))) &kp LS(LA(LC(E)))     &kp LS(LA(LC(I)))   &kp LS(LA(LC(O)))
+    &none        &none &none &none &none                                  &kp LS(LA(LC(K))) &kp LS(LA(LC(H))) &kp LS(LA(LC(COMMA))) &kp LS(LA(LC(DOT))) &kp LS(LA(LC(FSLH)))
             &to NUM &to SYM &none                                  &none &to SYM &to NUM
             >;
         };
