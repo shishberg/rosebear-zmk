@@ -6,10 +6,10 @@
 #define MAIN 0
 #define NUM  1
 #define SYM  2
-#define HOLD 3
-#define GAM  4
-#define GNUM 5
-#define GFUN 6
+#define GAM  3
+#define GNUM 4
+#define GFUN 5
+#define HOLD 6
 
 #define ASTR KP_ASTERISK
 
