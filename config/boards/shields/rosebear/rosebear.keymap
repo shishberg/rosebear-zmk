@@ -7,6 +7,9 @@
 #define NUM  1
 #define SYM  2
 #define HOLD 3
+#define GAM  4
+#define GNUM 5
+#define GFUN 6
 
 #define ASTR KP_ASTERISK
 
@@ -56,10 +59,38 @@
         HOLD_layer {
             bindings = <
     &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0 &bt BT_CLR &kp LS(LA(LC(J))) &kp LS(LA(LC(L))) &kp LS(LA(LC(U))) &kp LS(LA(LC(Y)))   &kp LS(LA(LC(SQT)))
-    &out OUT_TOG &none &none &none &none                                  &kp LS(LA(LC(M))) &kp LS(LA(LC(N))) &kp LS(LA(LC(E)))     &kp LS(LA(LC(I)))   &kp LS(LA(LC(O)))
+    &out OUT_TOG &none &none &none &tog GAM                               &kp LS(LA(LC(M))) &kp LS(LA(LC(N))) &kp LS(LA(LC(E)))     &kp LS(LA(LC(I)))   &kp LS(LA(LC(O)))
     &none        &none &none &none &none                                  &kp LS(LA(LC(K))) &kp LS(LA(LC(H))) &kp LS(LA(LC(COMMA))) &kp LS(LA(LC(DOT))) &kp LS(LA(LC(FSLH)))
             &to SYM &to NUM &none                                  &none &to NUM &to SYM
             >;
         };
+
+        GAM_layer {
+            bindings = <
+    &kp Q &kp W &kp F &kp P &kp B                           &kp J    &kp L      &kp U       &kp Y      &kp SQT
+    &kt A &kt R &kt S &kt T &kp G                           &kp M    &mt RGUI N &mt RSHFT E &mt RALT I &mt RCTRL O
+    &kp Z &kp X &kp C &kp D &kp V                           &kp K    &kp H      &kp COMMA   &kp DOT    &kp FSLH
+             &lt LNUM TAB &lt LFUN SPACE &lt HOLD ESC       &lt HOLD DEL   &lt NUM RET   &lt SYM BSPC
+            >;
+        };
+
+        GNUM_layer {
+            bindings = <
+    &kp LALT  &kp N7   &kp N8   &kp N9   &kp K_VOL_UP   &kp RBRC   &kp N7    &kp N8    &kp N9    &kp EQUAL
+    &kp LSHFT &kp N4   &kp N5   &kp N6   &kp K_VOL_DN   &kp RPAR   &kp N4    &kp N5    &kp N6    &kp MINUS
+    &kp LCMD  &kp N1   &kp N2   &kp N3   &kp N0         &kp RBKT   &kp N1    &kp N2    &kp N3    &kp SEMI
+                       &trans   &trans   &trans         &trans     &trans    &kp N0
+            >;
+        };
+
+        GFUN_layer {
+            bindings = <
+    &kp LALT  &kp F7   &kp F8   &kp F9   &kp F12    &kp RBRC   &kp N7    &kp N8    &kp N9    &kp EQUAL
+    &kp LSHFT &kp F4   &kp F5   &kp F6   &kp F11    &kp RPAR   &kp N4    &kp N5    &kp N6    &kp MINUS
+    &kp LCMD  &kp F1   &kp F2   &kp F3   &kp F10    &kp RBKT   &kp N1    &kp N2    &kp N3    &kp SEMI
+                        &trans  &trans   &trans     &trans     &trans    &kp N0
+            >;
+        };
+
     };
 };
