@@ -70,7 +70,7 @@
     &kp Q &kp W &kp F &kp P &kp B                           &kp J    &kp L      &kp U       &kp Y      &kp SQT
     &kt A &kt R &kt S &kt T &kp G                           &kp M    &mt RGUI N &mt RSHFT E &mt RALT I &mt RCTRL O
     &kp Z &kp X &kp C &kp D &kp V                           &kp K    &kp H      &kp COMMA   &kp DOT    &kp FSLH
-             &lt LNUM TAB &lt LFUN SPACE &lt HOLD ESC       &lt HOLD DEL   &lt NUM RET   &lt SYM BSPC
+             &lt GNUM TAB &lt GFUN SPACE &lt HOLD ESC       &lt HOLD DEL   &lt NUM RET   &lt SYM BSPC
             >;
         };
 
