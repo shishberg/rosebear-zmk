@@ -37,7 +37,7 @@
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        }
+        };
 
         ml: mod_tap_long {
             compatible = "zmk,behavior-hold-tap";
@@ -47,7 +47,7 @@
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-        }
+        };
     }
 
     keymap {
