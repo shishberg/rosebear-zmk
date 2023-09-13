@@ -13,11 +13,13 @@
 
 #define ASTR KP_ASTERISK
 
+/*
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <150>;
     quick-tap-ms = <150>;
 };
+*/
 
 &lt {
     flavor = "tap-preferred";
@@ -26,13 +28,35 @@
 };
 
 / {
+    behaviors {
+        ms: mod_tap_short {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_SHORT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        }
+
+        ml: mod_tap_long {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_LONG";
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        }
+    }
+
     keymap {
         compatible = "zmk,keymap";
 
         MAIN_layer {
             bindings = <
     &kp Q       &kp W      &kp F       &kp P      &kp B       &kp J &kp L      &kp U       &kp Y      &kp SQT
-    &mt LCTRL A &mt LALT R &mt LSHFT S &mt LGUI T &kp G       &kp M &mt RGUI N &mt RSHFT E &mt RALT I &mt RCTRL O
+    &ml LCTRL A &ms LALT R &ms LSHFT S &ms LGUI T &kp G       &kp M &ms RGUI N &ms RSHFT E &ml RALT I &ml RCTRL O
     &kp Z       &kp X      &kp C       &kp D      &kp V       &kp K &kp H      &kp COMMA   &kp DOT    &kp FSLH
              &lt SYM TAB   &lt NUM SPACE   &lt HOLD ESC       &lt HOLD DEL   &lt NUM RET   &lt SYM BSPC
             >;
@@ -59,7 +83,7 @@
         GAM_layer {
             bindings = <
     &kp Q &kp W &kp F &kp P &kp B                           &kp J    &kp L      &kp U       &kp Y      &kp SQT
-    &kp A &kp R &kp S &kp T &kp G                           &kp M    &mt RGUI N &mt RSHFT E &mt RALT I &mt RCTRL O
+    &kp A &kp R &kp S &kp T &kp G                           &kp M    &ms RGUI N &ms RSHFT E &ml RALT I &ml RCTRL O
     &kp Z &kp X &kp C &kp D &kp V                           &kp K    &kp H      &kp COMMA   &kp DOT    &kp FSLH
              &lt GNUM TAB &lt GFUN SPACE &lt HOLD ESC       &lt HOLD DEL   &lt NUM RET   &lt SYM BSPC
             >;
