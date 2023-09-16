@@ -76,7 +76,7 @@
         MAIN_layer {
             bindings = <
     &kp Q       &kp W      &kp F       &kp P      &kp B       &kp J &kp L      &kp U       &kp Y      &kp SQT
-    &ml LCTRL A &ml LALT R &ms LSHFT S &ml LGUI T &kp G       &kp M &ml RGUI N &ml RSHFT E &ml RALT I &ml RCTRL O
+    &ml LCTRL A &ml LALT R &ms LSHFT S &ml LGUI T &kp G       &kp M &ml RGUI N &ms RSHFT E &ml RALT I &ml RCTRL O
     &kp Z       &kp X      &kp C       &kp D      &kp V       &kp K &kp H      &kp COMMA   &kp DOT    &kp FSLH
              &ls SYM TAB   &ls NUM SPACE   &ls HOLD ESC       &ll HOLD DEL   &ll NUM RET   &ll SYM BSPC
             >;
