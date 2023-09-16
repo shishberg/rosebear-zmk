@@ -56,7 +56,7 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <150>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            /* bindings = <&kp>, <&kp>; */
         };
 
         ll: layer_tap_long {
@@ -66,7 +66,7 @@
             tapping-term-ms = <250>;
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            /* bindings = <&kp>, <&kp>; */
         };
     };
 
@@ -76,7 +76,7 @@
         MAIN_layer {
             bindings = <
     &kp Q       &kp W      &kp F       &kp P      &kp B       &kp J &kp L      &kp U       &kp Y      &kp SQT
-    &ml LCTRL A &ms LALT R &ms LSHFT S &ml LGUI T &kp G       &kp M &ml RGUI N &ml RSHFT E &ml RALT I &ml RCTRL O
+    &ml LCTRL A &ml LALT R &ms LSHFT S &ml LGUI T &kp G       &kp M &ml RGUI N &ml RSHFT E &ml RALT I &ml RCTRL O
     &kp Z       &kp X      &kp C       &kp D      &kp V       &kp K &kp H      &kp COMMA   &kp DOT    &kp FSLH
              &ls SYM TAB   &ls NUM SPACE   &ls HOLD ESC       &ll HOLD DEL   &ll NUM RET   &ll SYM BSPC
             >;
