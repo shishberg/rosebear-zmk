@@ -33,8 +33,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_SHORT";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -44,8 +44,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_LONG";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <250>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
@@ -55,8 +55,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_SHORT";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -66,8 +66,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_LONG";
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            quick-tap-ms = <250>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
